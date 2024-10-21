@@ -1,0 +1,87 @@
+
+body {
+  margin: 0;
+  font-family: Arial, ;
+  background-color: maroon; 
+}
+
+.container {
+  background-color: whitesmoke;
+  border-top: 5px solid maroon;
+  color: maroon;
+  padding: 0px;
+}
+
+header {
+  background: maroon;
+  color: whitesmoke;
+  text-align: center;
+  padding: 50px 0;
+}
+h1 {
+  margin: 0;
+    font-size: 50px;
+}
+
+.contact-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.column {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.column:last-child {
+  margin-right: 0;
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 5px;
+}
+
+p {
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px 20px;
+  background-color: maroon;
+}
+
+button {
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  color: whitesmoke;
+  background-color: maroon;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh; 
+}
+
+form {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 10px;
+  color: whitesmoke;
+}

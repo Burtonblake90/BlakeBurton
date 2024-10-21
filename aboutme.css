@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, ;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('bl');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: black; 
+}
+
+header {
+    background: maroon;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 { 
+    font-size: 50px;
+}
+
+.container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background-color: whitesmoke;
+    color: maroon;
+}
+
+.container h2 {
+    margin-top: 0;
+}
+
+.container p {
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;  
+    margin-top: auto; 
+    padding: 20px 0; 
+}
+
+button {
+    padding: 10px 20px;
+    background: maroon;
+    color: whitesmoke;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+footer {
+    background: maroon;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
