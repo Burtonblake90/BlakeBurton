@@ -4,15 +4,26 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="abindex1.css">
     <meta name="description" content="Explore graphics by Blake Burton. Visit the Home Page for information about designs, contact details, and more.">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".fade-in").css("opacity", 0).animate({ opacity: 1 }, 2000);
+        });
+    </script>
 </head>
 
 <body>
     <div class="header">
-        <h1 class="title">Blake Burton</h1>
+        <h1 class="title fade-in">Welcome</h1>
     </div>
 
     <div class="banner">
         Welcome to my site! Explore my designs and creativity.
+    </div>
+
+   
+    <div class="image-container">
+        <img src="home%20background.png" alt="Your Image" class="centered-image">
     </div>
 
     <div class="footer">
@@ -27,6 +38,9 @@
         </a>
         <a href="continued.html"> 
             <button id="homeBtn">Work Designs</button>
+            </a>
+        <a href="freelance.html"> 
+            <button id="homeBtn">School Work</button>
         </a>
     </div>
 </body>
