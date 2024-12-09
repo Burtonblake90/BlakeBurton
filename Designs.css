@@ -1,69 +1,89 @@
-body {
-  background-color: whitesmoke;
+{
   margin: 0;
   padding: 0;
-  font-family: Arial, ;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  box-sizing: border-box;
 }
+
+
+body {
+  background-color: whitesmoke;
+  color: maroon;
+  font-family: Arial, sans-serif;
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column; 
+  position: relative;  
+}
+
 
 .header {
-  background-color: maroon;
   text-align: center;
+  background-color: maroon;
   color: whitesmoke;
   padding: 20px 0;
-}
-
-.banner {
-  background-color: ;
-  color: white;
-  padding: 10px;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .header h1 {
   font-size: 50px;
 }
 
+
 .image-container {
+  flex: 1; 
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 50px;
+}
+
+.image-container figure {
+  margin: 10px;
+  text-align: center;
 }
 
 .image-container img {
-  width: 300px;
+  width: 400px;
   height: auto;
-  margin: 30px;
+  border: 0px solid ;
+  border-radius: 10px;
+}
+
+.image-container figcaption {
+  margin-top: 5px;
+  font-size: 14px;
+  color: maroon;
+}
+
+.image-container .description {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 18px;
 }
 
 .footer {
-  text-align: center;
-  padding: 20px 0;
-  background-color: maroon;
-  color: lime;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: maroon; 
+    padding: 10px 0;
 }
 
 .footer a {
-  text-decoration: none;
+    margin: 0 10px; 
+    text-decoration: none;
 }
 
 .footer button {
-  padding: 10px 20px;
-  margin: 0 5px;
-  font-size: 16px;
-  background-color: maroon;
-  color: whitesmoke;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.footer button:hover {
-  background-color: #333;
-  color: black;
+    padding: 8px 16px;
+    background-color: maroon;
+    border: none;
+    border-radius: 5px;
+    color: whitesmoke;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
 }
